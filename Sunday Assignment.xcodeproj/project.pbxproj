@@ -11,6 +11,8 @@
 		C396E95626D7D7D4009FB3B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396E95526D7D7D4009FB3B8 /* ContentView.swift */; };
 		C396E95826D7D7D8009FB3B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C396E95726D7D7D8009FB3B8 /* Assets.xcassets */; };
 		C396E95B26D7D7D8009FB3B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C396E95A26D7D7D8009FB3B8 /* Preview Assets.xcassets */; };
+		C396E96326D7DC66009FB3B8 /* PlayersAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396E96226D7DC66009FB3B8 /* PlayersAPIModel.swift */; };
+		C396E96526D8D619009FB3B8 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396E96426D8D619009FB3B8 /* TeamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		C396E95726D7D7D8009FB3B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C396E95A26D7D7D8009FB3B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C396E95C26D7D7D8009FB3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C396E96226D7DC66009FB3B8 /* PlayersAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersAPIModel.swift; sourceTree = "<group>"; };
+		C396E96426D8D619009FB3B8 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				C396E95326D7D7D4009FB3B8 /* Sunday_AssignmentApp.swift */,
+				C396E96226D7DC66009FB3B8 /* PlayersAPIModel.swift */,
 				C396E95526D7D7D4009FB3B8 /* ContentView.swift */,
 				C396E95726D7D7D8009FB3B8 /* Assets.xcassets */,
 				C396E95C26D7D7D8009FB3B8 /* Info.plist */,
 				C396E95926D7D7D8009FB3B8 /* Preview Content */,
+				C396E96426D8D619009FB3B8 /* TeamView.swift */,
 			);
 			path = "Sunday Assignment";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				C396E95626D7D7D4009FB3B8 /* ContentView.swift in Sources */,
 				C396E95426D7D7D4009FB3B8 /* Sunday_AssignmentApp.swift in Sources */,
+				C396E96326D7DC66009FB3B8 /* PlayersAPIModel.swift in Sources */,
+				C396E96526D8D619009FB3B8 /* TeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
