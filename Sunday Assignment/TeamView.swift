@@ -14,13 +14,30 @@ struct TeamView: View {
 		List{
 			ForEach(playerList){player in
 				
-				Text("\(player.name)")
+				HStack{
+					Image(systemName: "person.circle")
+						.resizable()
+						.scaledToFit()
+						.frame(width: 25, height: 25, alignment: .center)
+					Text("\(player.name)")
+						.font(.title2)
+					
+					
+					if let captainStatus = player.captain{
+						if captainStatus{
+							Text("(c)")
+								.font(.title2)
+								.fontWeight(.bold)
+						}
+					}
+				}
 				
 			}
 			
 		}
+		.padding(.vertical)
 		.actionSheet(isPresented: $isActionBarShowing){
-			ActionSheet(title: Text("Filter"), message: Text("Select the attribute to filter"), buttons: [.default(Text("Firstname"), action: {
+			ActionSheet(title: Text("Sorting options"), message: Text("Select  anyone from the below options"), buttons: [.default(Text("Firstname"), action: {
 				self.playerList.sort(by: {$0.firstName < $1.firstName})
 			}),.default(Text("Surname"), action: {
 				self.playerList.sort(by: {$0.lastName < $1.lastName})
@@ -31,7 +48,15 @@ struct TeamView: View {
 		.navigationBarItems(trailing: Button(action: {
 			isActionBarShowing.toggle()
 		}){
-			Image(systemName: "plus")
+			
+			
+			Image(systemName: "line.horizontal.3.decrease.circle")
+				.resizable()
+				.scaledToFit()
+				.frame(width: 30, height: 30, alignment: .center)
+				.foregroundColor(.blue)
+				.padding(.horizontal)
+			
 		})
 	}
 }

@@ -15,7 +15,8 @@ struct ContentView: View {
 				ForEach(controller.playerList.keys.sorted(by: <), id: \.self){ country in
 					HStack{
 						Text("\(country)")
-							.padding(.horizontal)
+							.font(.title2)
+							
 						NavigationLink("", destination: TeamView(playerList: (controller.playerList[country] ?? controller.playerList["India"]!)
 						)
 						)
@@ -23,6 +24,7 @@ struct ContentView: View {
 					
 				}
 			}
+			.padding(.vertical)
 			.navigationBarTitle("Countries")
 		}
 		
